@@ -1,0 +1,48 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Script para todo el server", "DarkTheme")
+local Tab = Window:NewTab("Cosas normales")
+local Section = Tab:NewSection("Compra nfts")
+Section:NewButton("Compra Ben", "Compra Ben", function()
+    local args = {
+        [1] = "Trading Ben"
+    }
+
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("Compra Munneh", "Compra Munneh", function()
+    local args = {
+        [1] = "Munneh"
+    }
+
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Section:NewButton("Compra Mommeh Long Legs", "Compra Mommeh Long Legs", function()
+    local args = {
+        [1] = "Mommeh Long Legs"
+    }
+
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+    local Section = Tab:NewSection("Crash")
+
+Section:NewButton("Crasheo", "Crasheo", function()
+    local args = {
+        [1] = "Jet"
+        }
+    
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+    end)
+
+
+    local Tab = Window:NewTab("Scripts")
+    local Section = Tab:NewSection("Thiago hub")
+    Section:NewButton("Thiago 1", "Thiago hub", function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/ThiagoProXdD/54794922d3dc92f2a32326d8c21de197/raw/b1182b5e1ed58a96a3a10883fe0444b59738a361/gistfile1.txt"))()
+    end)
+
+Section:NewButton("thiago 2", "Thiago 2", function()
+    loadstring(game:HttpGet("https://gist.githubusercontent.com/ThiagoProXdD/a5abfd1b0dd3a60d9a322f0af02730cc/raw/d0528942f2606db381b3eba8e23ac94d711aa88d/gistfile1.txt"))()
+end)
